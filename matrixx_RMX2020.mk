@@ -13,23 +13,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 $(call inherit-product, device/realme/RMX2020/device.mk)
 
 # Inherit some common AxionAOSP stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/matrixx/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_RMX2020
+PRODUCT_NAME := matrixx_RMX2020
 PRODUCT_DEVICE := RMX2020
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := RMX2020
 PRODUCT_MANUFACTURER := realme
 
 # AxionOS flags
-AXION_MAINTAINER := Koushik_Dey
-AXION_PROCESSOR := MediaTek_Helio_G70
-AXION_CAMERA_REAR_INFO := 12,2
-AXION_CAMERA_FRONT_INFO := 5
-TARGET_INCLUDES_LOS_PREBUILTS := true
-TARGET_PREBUILT_BCR := false
-TARGET_ENABLE_BLUR := true
+MATRIXX_MAINTAINER := Ritik
 
 # Build info
 PRODUCT_BUILD_PROP_OVERRIDES += \
