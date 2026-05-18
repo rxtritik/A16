@@ -126,7 +126,7 @@ BOARD_ODMIMAGE_FILE_SYSTEM_TYPE := ext4
 ifneq ($(WITH_GMS), true)
 -include vendor/lineage/config/BoardConfigReservedSize.mk
 endif
-
+BOARD_PRODUCTIMAGE_PARTITION_RESERVED_SIZE := 536870912
 TARGET_COPY_OUT_SYSTEM_EXT := system_ext
 TARGET_COPY_OUT_PRODUCT := product
 TARGET_COPY_OUT_VENDOR := vendor
